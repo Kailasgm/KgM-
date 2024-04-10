@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <style>
+      body{
+        background-color: rgb(43, 43, 43);
+      }
+
+      div{
+        margin:0px 5px 10px 50px;
+        display:block;
+        font-family: arial;
+        color: white;
+        font-weight: bold;
+      }
+      button{
+        width:22.6125px;
+        font-weight: bold;
+        height: 40px;
+        width: 40px;
+        border-radius: 20px;
+        color: white;
+        border: none;
+        background-color: black;
+        transition: opacity 0.15s, background-color 0.15s;
+      }
+      button:hover{
+        opacity: 1;
+        background-color: orange;
+      }
+      button:active{
+        opacity: 0.1;
+       
+      }
+      .clear-button{
+        width: 45px;
+      }
+      .clear-button:hover{
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <div>
+ 
+    
+      <div>
+        <p>Calculator(_KgM_ :/)</p>
+        <button onclick="calculation +='1';
+        console.log(calculation);">
+        1</button>
+  
+        <button onclick="calculation+=2;
+        console.log(calculation);">
+        2</button>
+    
+        <button onclick="calculation+=3;
+        console.log(calculation);">
+        3</button>
+    
+        <button onclick="calculation = calculation + ' + ';
+        console.log(calculation);">
+        +</button>
+      </div>
+  
+      <div>
+        <button onclick ="calculation = calculation+'4';
+        console.log(calculation);">
+        4</button>
+  
+        <button onclick ="calculation = calculation+' 5 ';
+        console.log(calculation);">
+        5</button>
+    
+        <button onclick ="calculation = calculation+' 6 ';
+        console.log(calculation);">
+        6</button>
+    
+        <button onclick ="calculation = calculation+' - ';
+        console.log(calculation);">
+        -</button>
+      </div>
+  
+      <div>
+        <button onclick ="calculation = calculation+'7';
+        console.log(calculation);">
+        7</button>
+  
+        <button onclick ="calculation = calculation+'8';
+        console.log(calculation);">
+        8</button>
+    
+        <button onclick ="calculation = calculation+'9';
+        console.log(calculation);">
+        9</button>
+    
+        <button onclick ="calculation = calculation+' * ';
+        console.log(calculation);"
+        >*</button>
+      </div>
+  
+      <div>
+        <button onclick ="calculation = calculation+'0';
+        console.log(calculation);">
+        0</button>
+  
+        <button onclick ="calculation = calculation+'.';
+        console.log(calculation);">
+        .</button>
+    
+        <button onclick="calculation=eval(calculation);
+        console.log(calculation);">
+        =</button>
+    
+        <button onclick ="calculation = calculation+' / ';
+        console.log(calculation);">
+        /</button>
+      </div>
+      <div>
+        <button class="clear-button" 
+        onclick ="calculation = '';
+        console.log('cleared');">
+        clear</button>
+      </div>
+    </div>
+
+    <script>
+      let calculation = '';
+    </script>
+    
+  </body>
+</html>
